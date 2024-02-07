@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="oigiede_proj4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplane.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="IWw-kT-9EZ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="A" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FTZ-T2-r5A">
+                                <rect key="frame" x="129" y="108.99999999999999" width="135" height="62.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="Dvb-t0-hLD"/>
+                                    <constraint firstAttribute="height" constant="62.329999999999998" id="tuu-RH-Yg6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alpha " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hn-9X-1fO">
+                                <rect key="frame" x="0.0" y="221.33333333333334" width="393" height="47.000000000000028"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="0kz-nI-QH0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1hn-9X-1fO" firstAttribute="top" secondItem="FTZ-T2-r5A" secondAttribute="bottom" constant="50" id="88H-6P-gTW"/>
+                            <constraint firstItem="1hn-9X-1fO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Krx-E1-dGA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IWw-kT-9EZ" secondAttribute="trailing" id="ZgD-Z7-s2q"/>
+                            <constraint firstItem="FTZ-T2-r5A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="db2-00-1sL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1hn-9X-1fO" secondAttribute="trailing" id="fDu-hR-Jyx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IWw-kT-9EZ" secondAttribute="bottom" id="g6V-Ds-doT"/>
+                            <constraint firstItem="FTZ-T2-r5A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ko4-cO-IVX"/>
+                            <constraint firstItem="IWw-kT-9EZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nmo-gb-OgL"/>
+                            <constraint firstItem="IWw-kT-9EZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zZD-5d-pu7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pilotWord" destination="1hn-9X-1fO" id="c2A-bX-3fr"/>
+                        <outlet property="userInput" destination="FTZ-T2-r5A" id="4bO-1c-SIc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="airplane.jpeg" width="1000" height="1619"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
